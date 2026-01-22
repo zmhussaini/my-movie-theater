@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My move theater</title>
+    <link rel="stylesheet" href="./css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Lines&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Macondo&family=Rubik+Lines&display=swap" rel="stylesheet">
+
+<body>
+    <head></head>
+    <main>
+        <h1>Zeinab Movie Theater</h1>
+        <h3>enjoy the move: &#127918;  &#127909;  &#x1F37F;</h3>
+        <section>
+                <video id="vd"  src="./media/1.mp4" width="600" height="400" controls type="video.mp4"></video>
+        </section>
+          <button  id="botton" type="button">Play Again</button>
+    <script>
+        const video= document.getElementById('vd');
+        const button =document.getElementById('botton');
+        button.addEventListener('click', () =>{
+            video.currentTime = 0;
+            video.play();
+        })
+    </script>
+
+  
+    </main>
+    <footer></footer>
+
+        
+</body>
+</html>
